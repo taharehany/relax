@@ -1,0 +1,50 @@
+extend index
+
+block website_title
+    title relax | tracking
+
+block home_block
+    div(class="breadcrumb-area")
+        div(class="container")
+            nav(aria-label="breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(href="#") Home
+                    li(class="breadcrumb-item active", aria-current="page") Order details
+    div(class="track")
+        div(class="container")
+            div(class="track-content")
+                div(class="shipping-steps")
+                    div(class="steps" data-aos="fade-down" data-aos-delay="50")
+                        div(class="track-box active")
+                            div(class="icon")
+                                img(src="images/svgs/01.svg" class="img-fluid" alt="")
+                            div(class="text")
+                                h3 Shipping Active
+                        div(class="track-box")
+                            div(class="icon")
+                                img(src="images/svgs/02.svg" class="img-fluid" alt="")
+                            div(class="text")
+                                h3 Shipping in progress
+                        div(class="track-box")
+                            div(class="icon")
+                                img(src="images/svgs/03.svg" class="img-fluid" alt="")
+                            div(class="text") 
+                                h3 Delivered Successfully
+                div(class="track-text")
+                    p(data-aos="fade-down" data-aos-delay="50") Sender: 
+                        span ahmed ahmed
+                    p(data-aos="fade-down" data-aos-delay="100") Receiver: 
+                        span mona hussien
+                    p(data-aos="fade-down" data-aos-delay="150") Shipment Number: 
+                        span 2312203699
+                    p(data-aos="fade-down" data-aos-delay="200") Shipment Status: 
+                        span shipping in progress
+                    p(data-aos="fade-down" data-aos-delay="250") Reason: 
+                        span reason
+                div(class="more-details" data-aos="fade-down" data-aos-delay="50")
+                    div(class="icon")
+                        img(src="images/profile.png" class="img-fluid" alt="")
+                    div(class="text")
+                        h3 Driver name
+                        a(href="tel:011920920145") 011920920145 

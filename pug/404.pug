@@ -1,0 +1,21 @@
+extend index
+
+block website_title
+    title relax | error 404
+
+block home_block
+    div(class="breadcrumb-area")
+        div(class="container")
+            nav(aria-label="breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(href="#") Home
+                    li(class="breadcrumb-item active", aria-current="page") 404
+    section(class="error404")
+        .container 
+            .error-content 
+                //- h2 404
+                img(src="images/404.png", class="img-fluid" alt="")
+                p Page Not Found
+                .button 
+                    a(href="index.html" class="btn hvr-sweep-to-top") home page
